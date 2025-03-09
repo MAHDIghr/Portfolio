@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gherbi Kamel Mahdi</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link rel="icon" href="images/logo.png" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/Logo.png" alt="logo" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header" data-en="Home" data-fr="Accueil">Home</a></li>
+            <li>
+              <a href="#about" data-en="About" data-fr="À Propos">About</a>
+            </li>
+            <li>
+              <a href="#proj" data-en="Projects" data-fr="Projets">Projects</a>
+            </li>
+            <li>
+              <a href="#contact" data-en="Contact" data-fr="Contact">Contact</a>
+            </li>
+            <li><button onclick="toggleLanguage()">FR/EN</button></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p
+            data-en="Computer Science Student"
+            data-fr="Étudiant en Informatique"
+          >
+            Computer Science Student
+          </p>
+          <h1 id="typewriter">
+            <div class="truc1">
+              <span
+                id="line1"
+                class="line"
+                data-en="Hi, I am <span class='name'>Gherbi</span>"
+                data-fr="Bonjour, je suis <span class='name'>Gherbi</span>"
+              >
+                Hi, I am <span class="name">Gherbi</span>
+              </span>
+            </div>
+            <div class="truc1">
+              <span
+                id="line2"
+                class="line"
+                data-en="Kamel Mahdi From Toulouse"
+                data-fr="Kamel Mahdi de Toulouse"
+              >
+                Kamel Mahdi from Toulouse
+              </span>
+            </div>
+          </h1>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title" data-en="About Me" data-fr="À Propos de Moi">
+              About Me
+            </h1>
+            <p 
+            data-en="I am a dedicated and curious third-year student studying Computer Science at the University of Toulouse. With a strong work ethic and a natural curiosity, I am passionate about exploring the world of technology and its endless possibilities. I have the ability to work on large projects with adaptability and quick learning. I thrive in dynamic environments where I can apply my problem-solving skills to real-world challenges. My goal is not just to practice my skills, but to use them to learn more and innovate in the field."
+            data-fr="Je suis un étudiant en troisième année de licence informatique à l'Université de Toulouse. Avec une forte éthique de travail et une curiosité naturelle, je suis passionné par l'exploration du monde de la technologie et de ses possibilités infinies. J'ai la capacité de travailler sur de grands projets grâce à mon adaptabilité et à mon apprentissage rapide. Je m'épanouis dans des environnements dynamiques où je peux appliquer mes compétences en résolution de problèmes à des défis réels. Mon objectif n'est pas seulement de pratiquer mes compétences, mais surtout de les utiliser pour apprendre davantage et innover dans ce domaine."
+            >
+            I am a dedicated and curious third-year student studying Computer Science at the University of Toulouse. With a strong work ethic and a natural curiosity, I am passionate about exploring the world of technology and its endless possibilities. I have the ability to work on large projects with adaptability and quick learning. I thrive in dynamic environments where I can apply my problem-solving skills to real-world challenges. My goal is not just to practice my skills, but to use them to learn more and innovate in the field.
+            </p>
+
+            <div class="tab-titles">
+              <p
+                class="tab-links active-link"
+                onclick="opentab('skills')"
+                data-en="Skills"
+                data-fr="Compétences"
+              >
+                Skills
+              </p>
+              <p
+                class="tab-links"
+                onclick="opentab('projects')"
+                data-en="Projects"
+                data-fr="Projets"
+              >
+                Projects
+              </p>
+              <p
+                class="tab-links"
+                onclick="opentab('education')"
+                data-en="Education"
+                data-fr="Éducation"
+              >
+                Education
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span
+                    data-en="Programming Languages"
+                    data-fr="Langages de Programmation"
+                    >Programming Languages</span
+                  ><br />Java, Python, JavaScript, OCaml, C.
+                </li>
+                <li>
+                  <span data-en="Web Development" data-fr="Développement Web"
+                    >Web Development</span
+                  ><br />HTML, CSS, Js, Bootstrap, Django, REST API, Linux (Server).
+                </li>
+                <li>
+                  <span
+                    data-en="Systems and Networks"
+                    data-fr="Systèmes et Réseaux"
+                    >Systems and Networks</span
+                  ><br />API Posix, Unix, Windows, TCP, UDP, IP, HTTP/HTTPS, SSH, DNS, SMTP.
+                </li>
+                <li>
+                    <span
+                      data-en="Database Management"
+                      data-fr="Gestion de Base de Données"
+                      >Database Management</span
+                    ><br />SQL, MySQL, Oracle SQL.
+                </li>
+                <li>
+                    <span
+                      data-en="Project Management"
+                      data-fr="Gestion de projet"
+                      >Project Management</span
+                    ><br />Agile, Cycle en V (Méthode classique).
+                  </li>
+                <li>
+                  <span
+                    data-en="ML/ Data Analysis and Visualization Frameworks/Libraries"
+                    data-fr="Frameworks/Libraries pour ML/ Analyse et Visualisation de Données"
+                    >ML/ Data Analysis and Visualization Frameworks/Libraries</span
+                  ><br />Scikit-learn, Pandas, Numpy, Matplotlib.
+                </li>
+                <li>
+                    <span
+                      data-en="Tools/ Other libraries"
+                      data-fr="Utils/ Autre libraries"
+                      >Tools/ Other libraries</span
+                    ><br />Git, GitHub, Shell, Eclipse, VS Code, IntelliJ.
+                  </li>
+                  <li>
+                    <span
+                      data-en="Software development (Desktop)"
+                      data-fr="Développement logiciel (Desktop)"
+                      >Software development (Desktop)</span
+                    ><br />Java, Python, C, JavaSwing (interface graphique), Tkinter, Junit, Test (Unitaire/Fonctionnel/Integration).
+                  </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="projects">
+                <ul>
+                    <li>
+                      <span data-en="Development of an asymmetric cryptography system (RSA) - DIY Privacy Guard (DIYPG)" data-fr="Développement d’un système de cryptographie asymétrique (RSA) - DIY Privacy Guard (DIYPG)">Development of an asymmetric cryptography system (RSA) - DIY Privacy Guard (DIYPG)</span><br />
+                    </li>
+                    <li
+                      data-en="Conception and implementation of an asymmetric cryptography system inspired by Gnu Privacy Guard (GPG). Technologies: C, Python, GMP (GNU Multiple Precision), SHA-256, Base64. Details: Key pair generation, encryption/decryption, Base64 conversion, command interpreter, digital signatures."
+                      data-fr="Conception et implémentation d’un système de cryptographie asymétrique inspiré de Gnu Privacy Guard (GPG). Technologies : C, Python, GMP (GNU Multiple Precision), SHA-256, Base64. Détails : Génération de paires de clés, chiffrement/déchiffrement, conversion Base64, interpréteur de commandes, signatures numériques."
+                    >
+                      Conception and implementation of an asymmetric cryptography system inspired by Gnu Privacy Guard (GPG). Technologies: C, Python, GMP (GNU Multiple Precision), SHA-256, Base64. Details: Key pair generation, encryption/decryption, Base64 conversion, command interpreter, digital signatures.
+                    </li>
+                    <li>
+                      <span data-en="Supplier management software for a pharmaceutical industry (2024)" data-fr="Logiciel de gestion des fournisseurs pour une industrie pharmaceutique (2024)">Supplier management software for a pharmaceutical industry (2024)</span><br />
+                    </li>
+                    <li
+                      data-en="Development of a desktop application to manage supplier contracts and deliveries. Technologies: Java, Java Swing, MVC, CSV files, OCaml (data persistence), Coq (algorithm proof). Details: MVC architecture, intuitive graphical interface, OCaml for data persistence, formal proof with Coq."
+                      data-fr="Développement d’une application desktop pour gérer les contrats et les livraisons des fournisseurs. Technologies : Java, Java Swing, MVC, fichiers CSV, OCaml (persistance des données), Coq (preuve d’algorithmes). Détails : Architecture MVC, interface graphique intuitive, OCaml pour la persistance des données, preuve formelle avec Coq."
+                    >
+                      Development of a desktop application to manage supplier contracts and deliveries. Technologies: Java, Java Swing, MVC, CSV files, OCaml (data persistence), Coq (algorithm proof). Details: MVC architecture, intuitive graphical interface, OCaml for data persistence, formal proof with Coq.
+                    </li>
+                    <li>
+                      <span data-en="Data analysis and automation of trading strategies (2024)" data-fr="Analyse de données et automatisation de stratégies en trading (2024)">Data analysis and automation of trading strategies (2024)</span><br />
+                    </li>
+                    <li
+                      data-en="Use of broker APIs to retrieve data on currency pairs, automated analysis and filtering of data in Python. Technologies: Python, Matplotlib, NumPy, Scikit-learn, SQL."
+                      data-fr="Utilisation des API des brokers afin de récupérer des données sur des paires de devises, analyse et filtrage automatisé des données en Python. Technologies : Python, Matplotlib, NumPy, Scikit-learn, SQL."
+                    >
+                      Use of broker APIs to retrieve data on currency pairs, automated analysis and filtering of data in Python. Technologies: Python, Matplotlib, NumPy, Scikit-learn, SQL.
+                    </li>
+                    <li>
+                      <span data-en="Client/Server file transfer application using TCP/IP protocol (2025)" data-fr="Application Client/Server de transfert de fichiers avec le protocole TCP/IP (2025)">Client/Server file transfer application using TCP/IP protocol (2025)</span><br />
+                    </li>
+                    <li
+                      data-en="Implementation of the TCP/IP protocol in C, securing transfers with error control/flow control algorithms like Go Back N, Selective Repeat."
+                      data-fr="Implémentation du protocole TCP/IP en langage C, sécurisation des transferts avec les algorithmes de contrôle d'erreurs/contrôle de flux comme Go Back N, Selective Repeat."
+                    >
+                      Implementation of the TCP/IP protocol in C, securing transfers with error control/flow control algorithms like Go Back N, Selective Repeat.
+                    </li>
+                    <li>
+                      <span data-en="Math-Info Project (Fractal Generation)" data-fr="Projet Math-Info (Génération des fractales)">Math-Info Project (Fractal Generation)</span><br />
+                    </li>
+                    <li
+                      data-en="Fractal generation software with animations, based on mathematical calculations. Techniques used: Developed in Python, graphical interface (Figma + Tkinter)."
+                      data-fr="Logiciel de génération de fractales avec des animations, basé sur des calculs mathématiques. Techniques utilisées : Développé en Python, interface graphique (Figma + Tkinter)."
+                    >
+                      Fractal generation software with animations, based on mathematical calculations. Techniques used: Developed in Python, graphical interface (Figma + Tkinter).
+                    </li>
+                  </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span data-en="Bachelor's degree in computer science" data-fr="Licence Informatique (3 ème année)">Bachelor's degree in computer science</span>
+                  <br
+                    data-en="Paul Sabatier University Toulouse 3 (2022 - 2025)"
+                    data-fr="Université Paul Sabatier Toulouse 3 (2022 - 2025)"
+                  />Université Paul Sabatier Toulouse 3 (2022 - 2025)  :
+                  <br><br> Algorithmique, Réseaux, Système, Java C Python Ocaml, Bases de données, Génie logiciel ...
+                </li>
+                <li>
+                    <span data-en="Preparatory class in science and technology" data-fr="Classe préparatoire en sciences et technologies">Preparatory class in science and technology</span>
+                    <br
+                      data-en="Polytechnic School of Algiers (2021 - 2022)"
+                      data-fr="École d’ingénieur polytechnique Alger (2021 - 2022)"
+                    />École d’ingénieur polytechnique Alger (2021 - 2022) :
+                    <br><br> Analyse, Algèbre, C, Dessin technique (AutoCad/SolidWorks), Physique, Chemie.
+                </li>
+                <li>
+                    <span data-en="Baccalaureate in Mathematics" data-fr="Baccalauréat série Mathématique">Baccalaureate in Mathematics</span>
+                    <br
+                      data-en="Tizi Ouzou High School, Algeria (2021)"
+                      data-fr="Lycée Tizi Ouzou, Algérie (2021)"
+                    />Lycée Tizi Ouzou, Algérie (2021) :
+                    <br><br> Baccalauréat série Mathématique, Mention Très bien.
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <section class="projects section" id="proj">
+      <div class="container">
+        <h2 class="section__title">RECENT PROJECTS</h2>
+        
+        <div class="projects__container container grid">
+          <article class="projects__card">
+            <a href="" target="_blank" class="projects__image">
+              <img src="images/DPY.png" alt="image" class="projects__img" />
+            </a>
+      
+            <div class="projects__data">
+              <h3 class="projects__name">DIY Privacy Guard (DIYPG)</h3>
+              <p class="projects__description">
+                Designed and implemented an asymmetric cryptography system inspired by Gnu Privacy Guard (GPG). Features include key pair generation, encryption/decryption, Base64 conversion, command interpreter, and digital signatures.
+              </p>
+              <div class="hoho">
+                <div class="project__skills">
+                  <img src="images/C.png" alt="C" class="project__skill" />
+                  <img src="images/Python.svg" alt="Python" class="project__skill" />
+                  <img src="images/gmp.jfif" alt="GMP" class="project__skill" />
+                  <img src="images/sha256.png" alt="SHA-256" class="project__skill" />
+                  <img src="images/base64.png" alt="Base64" class="project__skill" />
+                </div>
+                <a href="" target="_blank" class="projects__button">
+                  <i class="ri_link"><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    fill="currentColor"
+                    class="bi bi-link"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9q-.13 0-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"
+                    />
+                    <path
+                      d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4 4 0 0 1-.82 1H12a3 3 0 1 0 0-6z"
+                    />
+                  </svg></i>
+                  <span>Visit Project</span>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="projects__card">
+            <a href="https://github.com/MAHDIghr/logicielDeGestionDesContrats" target="_blank" class="projects__image">
+              <img src="images/AppDEGestionDesFournisseur.png" alt="image" class="projects__img" />
+            </a>
+    
+            <div class="projects__data">
+              <h3 class="projects__name">Pharmaceutical Supplier Management Software</h3>
+              <p class="projects__description">
+                Developed a desktop application to manage supplier contracts and deliveries. Features include an intuitive GUI, MVC architecture, data persistence with OCaml, and formal proof of algorithms with Coq.
+              </p>
+              <div class="project__skills">
+                <img src="images/java.svg" alt="Java" class="project__skill" />
+                <img src="images/ocaml.jfif" alt="OCaml" class="project__skill" />
+                <img src="images/coq.png" alt="Coq" class="project__skill" />
+                <img src="images/csv.png" alt="CSV" class="project__skill" />
+              </div>
+              <a href="https://github.com/MAHDIghr/logicielDeGestionDesContrats" target="_blank" class="projects__button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  class="bi bi-link"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9q-.13 0-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"
+                  />
+                  <path
+                    d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4 4 0 0 1-.82 1H12a3 3 0 1 0 0-6z"
+                  />
+                </svg>
+                <i class="ri_link"></i>
+                <span>Visit Project</span>
+              </a>
+            </div>
+          </article>
+          <article class="projects__card">
+            <a href="" target="_blank" class="projects__image">
+              <img src="images/trading.jpg" alt="image" class="projects__img" />
+            </a>
+    
+            <div class="projects__data">
+              <h3 class="projects__name">Trading Data Analysis & Strategy Automation</h3>
+              <p class="projects__description">
+                Utilized broker APIs to retrieve currency pair data, performed automated data analysis, and filtered strategies using Python.
+              </p>
+              <div class="hoho">
+                <div class="project__skills">
+                  <img src="images/Python.svg" alt="Python" class="project__skill" />
+                  <img src="images/matplotlib.png" alt="Matplotlib" class="project__skill" />
+                  <img src="images/numpy-1.svg" alt="NumPy" class="project__skill" />
+                  <img src="images/scikit-learn.png" alt="Scikit-learn" class="project__skill" />
+                  <img src="images/sql.jfif" alt="SQL" class="project__skill" />
+                </div>
+    
+                <a href="" target="_blank" class="projects__button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    fill="currentColor"
+                    class="bi bi-link"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9q-.13 0-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"
+                    />
+                    <path
+                      d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4 4 0 0 1-.82 1H12a3 3 0 1 0 0-6z"
+                    />
+                  </svg>
+                  <i class="ri_link"></i>
+                  <span>Visit Project</span>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="projects__card">
+            <a href="https://github.com/MAHDIghr/Files-Transfert-App-TCP" target="_blank" class="projects__image">
+              <img src="images/files-Transfer-App.jpg" alt="image" class="projects__img" />
+            </a>
+    
+            <div class="projects__data">
+              <h3 class="projects__name">TCP/IP File Transfer Application</h3>
+              <p class="projects__description">
+                Implemented the TCP/IP protocol in C, securing file transfers with error control and flow control algorithms like Go Back N and Selective Repeat.
+              </p>
+              <div class="hoho">
+                <div class="project__skills">
+                  <img src="images/C.png" alt="C" class="project__skill" />
+                  <img src="images/tcp.jfif" alt="TCP/IP" class="project__skill" />
+                </div>
+                <a href="https://github.com/MAHDIghr/Files-Transfert-App-TCP" target="_blank" class="projects__button">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    fill="currentColor"
+                    class="bi bi-link"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9q-.13 0-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"
+                    />
+                    <path
+                      d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4 4 0 0 1-.82 1H12a3 3 0 1 0 0-6z"
+                    />
+                  </svg>
+                  <i class="ri_link"></i>
+                  <span>Visit Project</span>
+                </a>
+              </div>
+            </div>
+          </article>
+          <article class="projects__card">
+            <a href="https://github.com/MAHDIghr/Fractal-Generator" target="_blank" class="projects__image">
+              <img src="images/FractalGenerator.png" alt="image" class="projects__img" />
+            </a>
+    
+            <div class="projects__data">
+              <h3 class="projects__name">Fractal Generator</h3>
+              <p class="projects__description">
+                Developed a fractal generation software with animations, based on mathematical calculations. Built with Python and a graphical interface using Figma and Tkinter.
+              </p>
+              <div class="project__skills">
+                <img src="images/Python.svg" alt="Python" class="project__skill" />
+                <img src="images/tkinter.png" alt="Tkinter" class="project__skill" />
+                <img src="images/figma.jfif" alt="Figma" class="project__skill" />
+              </div>
+              <a href="https://github.com/MAHDIghr/Fractal-Generator" target="_blank" class="projects__button">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="30"
+                  height="30"
+                  fill="currentColor"
+                  class="bi bi-link"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M6.354 5.5H4a3 3 0 0 0 0 6h3a3 3 0 0 0 2.83-4H9q-.13 0-.25.031A2 2 0 0 1 7 10.5H4a2 2 0 1 1 0-4h1.535c.218-.376.495-.714.82-1z"
+                  />
+                  <path
+                    d="M9 5.5a3 3 0 0 0-2.83 4h1.098A2 2 0 0 1 9 6.5h3a2 2 0 1 1 0 4h-1.535a4 4 0 0 1-.82 1H12a3 3 0 1 0 0-6z"
+                  />
+                </svg>
+                <i class="ri_link"></i>
+                <span>Visit Project</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="experiences section" id="exp">
+      <div class="container">
+        <h2 class="section__title" data-en="Professional Experiences" data-fr="Expériences Professionnelles">Professional Experiences</h2>
+        
+        <div class="experiences__container container grid">
+          <article class="experiences__card">
+            <div class="experiences__data">
+              <h3 class="experiences__name" data-en="Full-Stack Developer & Project Manager - Promozella (Freelance)" data-fr="Développeur Full-Stack & Chef de Projet - Promozella (Indépendant)">Full-Stack Developer & Project Manager - Promozella (Freelance)</h3>
+              <p class="experiences__duration" data-en="Oct 2024 - Nov 2024" data-fr="Oct 2024 - Nov 2024">Oct 2024 - Nov 2024</p>
+              <p class="experiences__description">
+                <span
+                  data-en="Designed and developed the Promozella website using Django, Python, HTML/CSS, JavaScript, and Bootstrap. Managed the entire project using Agile methodology, integrated e-commerce affiliate systems, and automated regular site updates with Selenium. Deployed on a shared server. Collaborated with a team. GitHub repository available."
+                  data-fr="Conception et développement du site Promozella avec Django, Python, HTML/CSS, JavaScript et Bootstrap. Gestion complète du projet en méthode Agile, intégration de systèmes d’affiliation e-commerce, et automatisation des actualisations régulières du site avec Selenium. Déploiement sur serveur mutualisé. Collaboration en équipe. Dépôt GitHub du projet."
+                >
+                  Designed and developed the Promozella website using Django, Python, HTML/CSS, JavaScript, and Bootstrap. Managed the entire project using Agile methodology, integrated e-commerce affiliate systems, and automated regular site updates with Selenium. Deployed on a shared server. Collaborated with a team. GitHub repository available.
+                </span>
+              </p>
+              <div class="project__skills">
+                <img src="images/Python.svg" alt="Python" class="project__skill" />
+                <img src="images/django.png" alt="Django" class="project__skill" />
+                <img src="images/html.png" alt="HTML" class="project__skill" />
+                <img src="images/CSS.jfif" alt="CSS" class="project__skill" />
+                <img src="images/JavaScript.svg" alt="JavaScript" class="project__skill" />
+                <img src="images/Bootstrap.jfif" alt="Bootstrap" class="project__skill" />
+                <img src="images/Selenium.png" alt="Selenium" class="project__skill" />
+              </div>
+            </div>
+          </article>
+    
+          <article class="experiences__card">
+            <div class="experiences__data">
+              <h3 class="experiences__name" data-en="Parcel Service Manager - Paul Sabatier University" data-fr="Responsable du bureau de service colis - Université Paul Sabatier">Parcel Service Manager - Paul Sabatier University</h3>
+              <p class="experiences__duration" data-en="Sep 2023 - Sep 2024" data-fr="Sep 2023 - Sep 2024">Sep 2023 - Sep 2024</p>
+              <p class="experiences__description">
+                <span
+                  data-en="Managed parcel operations: reception, verification, storage, and distribution. Organized deliveries and tracked parcels for students and staff."
+                  data-fr="Gestion des colis : réception, vérification, stockage et distribution. Organisation des livraisons et suivi des colis pour les étudiants et le personnel."
+                >
+                  Managed parcel operations: reception, verification, storage, and distribution. Organized deliveries and tracked parcels for students and staff.
+                </span>
+              </p>
+            </div>
+          </article>
+    
+          <article class="experiences__card">
+            <div class="experiences__data">
+              <h3 class="experiences__name" data-en="Sales Animator - DMF, Toulouse" data-fr="Animateur commercial - DMF, Toulouse">Sales Animator - DMF, Toulouse</h3>
+              <p class="experiences__duration" data-en="Oct 2024 - Dec 2024" data-fr="Oct 2024 - Dec 2024">Oct 2024 - Dec 2024</p>
+              <p class="experiences__description">
+                <span
+                  data-en="Identified customer needs, recommended products, and handled sales."
+                  data-fr="Identification des besoins clients, recommandation de produits et vente."
+                >
+                  Identified customer needs, recommended products, and handled sales.
+                </span>
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <div id="globe-container" style="position: relative; width: 100%; height: 400px;"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+    <script src="globe.js"></script>
+
+    <div id="contact" style="margin-top: 100px">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title" data-en="Contact Me" data-fr="Contactez Moi">
+              Contact Me
+            </h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i> kamelmahdigherbi@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i> 06 41 92 97 07</p>
+            <p class="github">
+              <a
+                href="https://github.com/MAHDIghr"
+                target="_blank"
+                class="github-link"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="32"
+                  height="32"
+                  fill="currentColor"
+                  class="bi bi-github"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"
+                  />
+                </svg>
+                <a
+                  href="https://github.com/MAHDIghr"
+                  target="_blank"
+                  class="github-link-text"
+                  >https://github.com/MAHDIghr</a
+                >
+              </a>
+            </p>
+            <a
+              href="CV/CV_GHERBI_KAMEL_MAHDI.pdf"
+              download
+              class="btn btn2"
+              data-en="Download CV"
+              data-fr="Télécharger CV"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <span id="msg"></span>
+            <form
+              name="contact-form"
+              action="https://formsubmit.co/mahdighrghr@gmail.com"
+              method="POST"
+            >
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                required
+                data-en="Your Name"
+                data-fr="Votre Nom"
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+                data-en="Your Email"
+                data-fr="Votre Email"
+              />
+              <textarea
+                name="message"
+                rows="6"
+                placeholder="Your Message"
+                data-en="Your Message"
+                data-fr="Votre Message"
+              ></textarea>
+              <button
+                type="submit"
+                class="btn btn2"
+                data-en="Submit"
+                data-fr="Envoyer"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p
+          data-en="Copyright <i class='fa-regular fa-copyright'></i> Gherbi Kamel Mahdi."
+          data-fr="Droits d'auteur <i class='fa-regular fa-copyright'></i> Gherbi Kamel Mahdi."
+        >
+          Copyright <i class="fa-regular fa-copyright"></i> Gherbi Kamel Mahdi.
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
